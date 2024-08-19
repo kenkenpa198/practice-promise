@@ -4,6 +4,10 @@
 $ node fuga.js
 ```
 
+## Output
+
+- [Actions > Node.js CI](https://github.com/kenkenpa198/practice-promise/actions/workflows/run.yml)
+
 ## Reference
 
 - [MDN Web Docs](https://developer.mozilla.org/ja/)
