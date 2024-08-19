@@ -1,4 +1,6 @@
-// 非同期処理を行う関数
+/**
+ * Git のユーザー名を取得する非同期関数
+ */
 const getGitUsername = async () => {
   const message = 'Git Username: ';
   const url = 'https://api.github.com/users/kenkenpa198';

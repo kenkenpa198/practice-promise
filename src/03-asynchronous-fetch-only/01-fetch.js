@@ -1,4 +1,6 @@
-// 非同期処理を行う関数
+/**
+ * Git のユーザー名を取得する非同期関数
+ */
 const getGitUsername = () => {
   const url = 'https://api.github.com/users/kenkenpa198';
 
@@ -8,10 +10,6 @@ const getGitUsername = () => {
     .then((json) => {
       console.log('これは非同期処理成功時のメッセージです');
       return json.login;
-    })
-    .catch((error) => {
-      console.error('これは非同期処理失敗時のメッセージです', error);
-      return null;
     });
 };
 

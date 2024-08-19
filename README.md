@@ -1,26 +1,10 @@
 # Practice - Promise
 
 ```shell
-$ cd src
-
-$ node synchronous.js
-Processing synchronousFunc
-synchronousFunc: Completed!
-
-$ node asynchronous.js
-Git Username: undefined
-これは非同期処理成功時のメッセージです
-
-$ node asynchronous-promise.js
-これは非同期処理成功時のメッセージです
-Git Username: kenkenpa198
-
-$ node asynchronous-async-await.js
-これは非同期処理成功時のメッセージです
-Git Username: kenkenpa198
+$ node fuga.js
 ```
 
-## 参考文献
+## Reference
 
 - [MDN Web Docs](https://developer.mozilla.org/ja/)
     - [非同期 JavaScript - ウェブ開発を学ぶ | MDN](https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous)
