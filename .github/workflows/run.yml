@@ -1,0 +1,46 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Run synchronous.js
+        run: node src/01-synchronous/synchronous.js
+
+      - name: Run src/01/01-callback.js
+        run: node src/02-asynchronous-callback/01-callback.js
+
+      - name: Run src/02/02-callback-hell.js
+        run: node src/02-asynchronous-callback/02-callback-hell.js
+
+      - name: Run src/03/01-fetch.js
+        run: node src/03-asynchronous-fetch-only/01-fetch.js
+
+      - name: Run src/03/02-fetch-with-comments.js
+        run: node src/03-asynchronous-fetch-only/02-fetch-with-comments.js
+
+      - name: Run src/03/99-show-response-members.js
+        run: node src/03-asynchronous-fetch-only/99-show-response-members.js
+
+      - name: Run src/04/promise.js
+        run: node src/04-asynchronous-promise/promise.js
+
+      - name: Run src/05/async-await.js
+        run: node src/05-asynchronous-async-await/async-await.js
