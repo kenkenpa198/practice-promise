@@ -6,7 +6,7 @@ $ node fuga.js
 
 ## Output
 
-- [Actions > Node.js CI](https://github.com/kenkenpa198/practice-promise/actions/workflows/run.yml)
+- [Actions > Node.js CI](https://github.com/kenkenpa198/practice-promise/actions/workflows/nodejs.yml)
 
 ## Reference
 
