@@ -3,7 +3,7 @@ const getGitUsername = () => {
   return new Promise((resolve, reject) => {
     const url = 'https://api.github.com/users/kenkenpa198';
 
-    // GitHub API を Fetch API (非同期処理) で実行する
+    // GitHub API を fetch メソッドで実行する
     fetch(url)
       .then((res) => res.json())
       .then((json) => {

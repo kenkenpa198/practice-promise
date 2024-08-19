@@ -3,6 +3,7 @@ const getGitUsername = async () => {
   const message = 'Git Username: ';
   const url = 'https://api.github.com/users/kenkenpa198';
 
+  // GitHub API を fetch メソッドで実行する
   const json = await fetch(url)
     .then((res) => {
       console.log('これは非同期処理成功時のメッセージです');
