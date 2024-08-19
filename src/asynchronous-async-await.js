@@ -17,3 +17,7 @@ const getGitUsername = async () => {
 };
 
 getGitUsername();
+
+// ->
+// これは非同期処理成功時のメッセージです
+// Git Username: kenkenpa198
